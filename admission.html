@@ -40,141 +40,158 @@
                 <hr>
                 <p>Personal Information:</p>
                 <hr>
-                <form action="form-control"><br>
-                    <p class="fname">First Name</p>
-                    <input type="text" name="fname" id="surname" required>
-                    <p class="lname">Last Name</p>
-                    <input type="text" name="lname" id="firstname" required>
-                    <p class="oname">Other Name</p>
-                    <input type="text" name="oname" id="othernames" required>
-                    <p class="sex">Sex</p>
-                    <input type="radio" name="dbt" value="dbt" checked id="direct">Male
-                    <input type="radio" name="dbt" value="cd" id="pay">Female
-                    <p class="birth">Date of birth</p>
-                    <table>
-                        <tr>
-                            <td>
-                                <select name="" id="birth">
-                                    <option value="birth">Choose</option>
-                                    <option value="birth">01</option>
-                                    <option value="birth">02</option>
-                                    <option value="birth">03</option>
-                                    <option value="birth">04</option>
-                                    <option value="birth">05</option>
-                                    <option value="birth">06</option>
-                                    <option value="birth">07</option>
-                                    <option value="birth">08</option>
-                                    <option value="birth">09</option>
-                                    <option value="birth">10</option>
-                                    <option value="birth">11</option>
-                                    <option value="birth">12</option>
-                                    <option value="birth">13</option>
-                                    <option value="birth">14</option>
-                                    <option value="birth">15</option>
-                                    <option value="birth">16</option>
-                                    <option value="birth">17</option>
-                                    <option value="birth">18</option>
-                                    <option value="birth">19</option>
-                                    <option value="birth">20</option>
-                                    <option value="birth">21</option>
-                                    <option value="birth">22</option>
-                                    <option value="birth">23</option>
-                                    <option value="birth">24</option>
-                                    <option value="birth">25</option>
-                                    <option value="birth">26</option>
-                                    <option value="birth">27</option>
-                                    <option value="birth">28</option>
-                                    <option value="birth">29</option>
-                                    <option value="birth">30</option>
-                                    <option value="birth">31</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="" id="">
-                                    <option value="">Choose</option>
-                                    <option value="">Jan</option>
-                                    <option value="">Feb</option>
-                                    <option value="">Mar</option>
-                                    <option value="">Apr</option>
-                                    <option value="">May</option>
-                                    <option value="">Jun</option>
-                                    <option value="">Jul</option>
-                                    <option value="">Aug</option>
-                                    <option value="">Sep</option>
-                                    <option value="">Oct</option>
-                                    <option value="">Nov</option>
-                                    <option value="">Dec</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="" id="">
-                                    <option value="">Choose</option>
-                                    <option value="">2010</option>
-                                    <option value="">2011</option>
-                                    <option value="">2012</option>
-                                    <option value="">2013</option>
-                                    <option value="">2014</option>
-                                    <option value="">2015</option>
-                                    <option value="">2016</option>
-                                    <option value="">2017</option>
-                                    <option value="">2018</option>
-                                    <option value="">2019</option>
-                                    <option value="">2020</option>
-                                    <option value="">2021</option>
-                                 </select>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="col">
-                        <p class="email">Email address</p>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="col">
-                        <p class="phone">Phone</p>
-                        <input type="number" name="phone" id="phone" required maxlength="11">
-                    </div>
-                    <div class="col">
-                        <p class="religion">Religion</p>
-                        <select name="" id="reg">
-                            <option value="">Choose</option>
-                            <option value="">Christianity</option>
-                            <option value="">Islam</option>
-                            <option value="">Traditional</option>
-                        <option value="">Other</option>
-                        </select>
-                    </div>
-                    <div class="col"><p class="address">Residential address</p>
-                        <input type="address" name="address" id="address" required>
-                    </div>
-                    <div class="col"><p class="state">State of resident</p>
-                        <input type="text" name="state" id="stateresident" required>
-                    </div>
-                    <div class="col"> <p class="country">country of resident</p>
-                        <input type="text" name="country" id="country" required>
-                    </div>
-                    <div class="col"><p class="state">State of origin</p>
-                        <input type="text" name="state" id="stateorigin" required>
-                    </div>
-                    <div class="col"><p class="lga">LGA origin</p>
-                        <input type="text" name="lga" id="lgaorigin" required>
-                    </div>
-                    <div class="col"><p class="origin">Country origin</p>
-                        <input type="text" name="origin" id="countryorigin" required>
-                    </div>
-                    <div class="col"> <p class="gua">Guardian fullname</p>
-                        <input type="text" name="gua" id="guaname" required>
-                    </div>
-                    <div class="col"><p class="tel">Guardian tel</p>
-                        <input type="text" name="tel" id="phonenumber" required>
-                    </div>
-                </form>
-                <button onclick="order()">Submit</button>
-                <p id="message"></p>
-            </div>
-        </div>
-    </div>
-   </div>
-
+                <div class="container">
+                    <form action="land.html">
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                          <table>
+                              <tr>
+                                  <td>
+                                      <select name="" id="birth">
+                                          <option value="birth">Choose</option>
+                                          <option value="birth">01</option>
+                                          <option value="birth">02</option>
+                                          <option value="birth">03</option>
+                                          <option value="birth">04</option>
+                                          <option value="birth">05</option>
+                                          <option value="birth">06</option>
+                                          <option value="birth">07</option>
+                                          <option value="birth">08</option>
+                                          <option value="birth">09</option>
+                                          <option value="birth">10</option>
+                                          <option value="birth">11</option>
+                                          <option value="birth">12</option>
+                                          <option value="birth">13</option>
+                                          <option value="birth">14</option>
+                                          <option value="birth">15</option>
+                                          <option value="birth">16</option>
+                                          <option value="birth">17</option>
+                                          <option value="birth">18</option>
+                                          <option value="birth">19</option>
+                                          <option value="birth">20</option>
+                                          <option value="birth">21</option>
+                                          <option value="birth">22</option>
+                                          <option value="birth">23</option>
+                                          <option value="birth">24</option>
+                                          <option value="birth">25</option>
+                                          <option value="birth">26</option>
+                                          <option value="birth">27</option>
+                                          <option value="birth">28</option>
+                                          <option value="birth">29</option>
+                                          <option value="birth">30</option>
+                                          <option value="birth">31</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <select name="" id="">
+                                          <option value="">Choose</option>
+                                          <option value="">Jan</option>
+                                          <option value="">Feb</option>
+                                          <option value="">Mar</option>
+                                          <option value="">Apr</option>
+                                          <option value="">May</option>
+                                          <option value="">Jun</option>
+                                          <option value="">Jul</option>
+                                          <option value="">Aug</option>
+                                          <option value="">Sep</option>
+                                          <option value="">Oct</option>
+                                          <option value="">Nov</option>
+                                          <option value="">Dec</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <select name="" id="">
+                                          <option value="">Choose</option>
+                                          <option value="">2010</option>
+                                          <option value="">2011</option>
+                                          <option value="">2012</option>
+                                          <option value="">2013</option>
+                                          <option value="">2014</option>
+                                          <option value="">2015</option>
+                                          <option value="">2016</option>
+                                          <option value="">2017</option>
+                                          <option value="">2018</option>
+                                          <option value="">2019</option>
+                                          <option value="">2020</option>
+                                          <option value="">2021</option>
+                                       </select>
+                                  </td>
+                              </tr>
+                          </table>
+                          <div class="col">
+                              <p class="email">Email address</p>
+                              <input type="email" name="email" id="email" required>
+                          </div>
+                          <div class="col">
+                              <p class="phone">Phone</p>
+                              <input type="number" name="phone" id="phone" required maxlength="11">
+                          </div>
+                          <div class="col">
+                              <p class="religion">Religion</p>
+                              <select name="" id="reg">
+                                  <option value="">Choose</option>
+                                  <option value="">Christianity</option>
+                                  <option value="">Islam</option>
+                                  <option value="">Traditional</option>
+                              <option value="">Other</option>
+                              </select>
+                          </div>
+                          <div class="col"><p class="address">Residential address</p>
+                              <input type="address" name="address" id="address" required>
+                          </div>
+                          <div class="col"><p class="state">State of resident</p>
+                              <input type="text" name="state" id="stateresident" required>
+                          </div>
+                          <div class="col"> <p class="country">country of resident</p>
+                              <input type="text" name="country" id="country" required>
+                          </div>
+                          <div class="col"><p class="state">State of origin</p>
+                              <input type="text" name="state" id="stateorigin" required>
+                          </div>
+                          <div class="col"><p class="lga">LGA origin</p>
+                              <input type="text" name="lga" id="lgaorigin" required>
+                          </div>
+                          <div class="col"><p class="origin">Country origin</p>
+                              <input type="text" name="origin" id="countryorigin" required>
+                          </div>
+                          <div class="col"> <p class="gua">Guardian fullname</p>
+                              <input type="text" name="gua" id="guaname" required>
+                          </div>
+                          <div class="col"><p class="tel">Guardian tel</p>
+                              <input type="text" name="tel" id="phonenumber" required>
+                          </div>
+                      </form>
+                      <button onclick="order()">Submit</button>
+                      <p id="message"></p>
+                  </div>
+                        </div>
+                      </div>
+                      
+                          
+                        </div>
+                      </div>
+                      
+                    </form>
+                  </div>
     <script src="admission.js"></script>
 
 </body>

@@ -8,6 +8,7 @@ var apple = function(){
     }
     else if (fee == 50000){
         document.getElementById("message").innerHTML = "School fees completely paid"
+        window.location.href="index.html"
     }
     else if (fee < fees && fee >= 0){
         var andy = Number(fees) - Number(fee)

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>SCHOOL FEES PAYMENT</h1>
+        </div>
+        <div class="flex">
+            <form action=""><br>
+                <p class="fname">First Name</p>
+                <input type="text" name="fname" id="fname" required>
+                <p class="lname">Last Name</p>
+                <input type="text" name="lname" id="lname" required>
+                <p class="oname">Other Name</p>
+                <input type="text" name="oname" id="oname" required>
+                
+                <p class="country">Country</p>
+                <select name="selection" id="select" required>
+                    <option value="">Select a country...</option>
+                    <option value="">Iceland</option>
+                    <option value="">India</option>
+                    <option value="">Korea</option>
+                    <option value="">Niger</option>
+                    <option value="">Nigeria</option>
+                    <option value="">Australia</option>
+                    <option value="">Cameroon</option>
+                    <option value="">Canada</option>
+                    <option value="">Congo</option>
+                    <option value="">Finland</option>
+                    <option value="">France</option>
+                    <option value="">Ireland</option>
+                    <option value="">Japan</option>
+                    <option value="">Jersey</option>
+                    <option value="">Jordan</option>
+                    <option value="">Mexico</option>
+                    <option value="">New Zealand</option>
+                    <option value="">Philippines</option>
+                    <option value="">South Africa</option>
+                    <option value="">United Kingdom</option>
+                    <option value="">United States</option>
+                </select>
+
+                <p class="level">Class</p>
+                <select name="selection" id="grade">
+                    <option value="">Select Class</option>
+                    <option value="">JSS 1A</option>
+                    <option value="">JSS 1B</option>
+                    <option value="">JSS 2A</option>
+                    <option value="">JSS 2B</option>
+                    <option value="">JSS 3A</option>
+                    <option value="">JSS 3B</option>
+                    <option value="">SSS 1A</option>
+                    <option value="">SSS 1B</option>
+                    <option value="">SSS 2A</option>
+                    <option value="">SSS 2B</option>
+                    <option value="">SSS 3A</option>
+                    <option value="">SSS 3B</option>
+                </select>
+
+                <p>Street Address </p>
+                <input type="text" name="house" placeholder="House number and street name" id="address" required>
+
+                <p>Phone </p>
+                <input type="tel" name="city" id="tel" required> 
+              
+                <p>Email Address </p></p>
+                <input type="email" name="city" id="email" pattern="(/\S+@\S+\.\S+/)" required> 
+            </form>
+            <div class="row">
+                <table>
+                    <tr><h2>Your Payment</h2></tr>
+                    <hr style="color: #888;">
+                </table><br>
+                <div>
+                    <input type="radio" name="dbt" value="dbt" checked id="direct">Direct Bank Transfer
+                </div>
+                <p>
+                    Make your payment directly into our bank account. Your order will not be shipped until the funds have been cleared in our account.
+                </p>
+                <div>
+                    <input type="radio" name="dbt" value="cd" id="pay">Paypal
+                    <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+                </div>
+                <button type="button" onclick="order()" id="try" >Pay School Fees</button>
+                <p id="message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

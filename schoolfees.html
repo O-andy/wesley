@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body, html{
+            height: 100px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .scroll{
+            /* full length and to center and scale the image nicely*/
+            height: 1000px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+            /* images used */
+        .img1{background-image: url(val1.jpg);}
+        .img2{background-image: url(val2.jpg);}
+        .img3{background-image: url(val3.jpg);}
+        .img4{background-image: url(val4.jpg);}
+        .img5{background-image: url(val5.jpg);}
+        .img6{background-image: url(val6.jpg);}
+
+            /* Position text in the middle of the page/image */
+        .text{
+            background-color: rgb(0,0,0);   /* fallback color */
+            background-color: rgba(0,0,0, 0.4);  /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            border: 10px solid #f1f1f1;
+            position: fixed;   /* stay fixed */
+            top: 50px;
+            left: 50px;
+            transform: translate(-50% -50%);
+            z-index: 2;
+            width: 1150px;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="scroll img1"></div>
+    <div class="scroll img2"></div>
+    <div class="scroll img3"></div>
+    <div class="scroll img4"></div>
+    <div class="scroll img5"></div>
+    <div class="scroll img6"></div>
+
+    <div class="text">
+    <h1>SCHOOL FEES PAYMENT</h1>
+    <P id="message"></P>
+    <input type="number" placeholder="Enter amount" id="fee" style="width: 50%; height: 50px;border-radius: 200px;font-size: 20px;padding: 15px;">
+    <br><button onclick="apple()" style="width: 10%;height: 30px;border-radius: 200px;font-size: 15px;">Submit</button>
+
+    </div>
+    
+    <script src="schoolfees.js"></script>
+</body>
+</html>

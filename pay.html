@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(bluely.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .leg{
+           text-align: center;
+           color: white;
+           margin-top: 10%;
+           font-size: 40px;
+           font-weight: bolder;
+        }
+        .mouth{
+            color: white;
+            text-align: center;
+        }
+        input{
+            height: 40px;
+            width: 50%;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        .cat{
+            color: white;
+            text-align: center;
+        }
+        .try{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="leg">
+        <h1>SCHOOL FEES PAYMENT</h1>
+    </div><br><br>
+
+    <div class="mouth">
+        <p>FULLNAME</p>
+        <input type="text" placeholder="enter fullname" required>
+    </div><br>
+
+    <div class="try">
+        <p class="level">CLASS</p>
+            <select name="selection" id="grade" style="text-align: center; width: 50%; height: 40px; border-radius: 20px; color: black;">
+                <option value="">Select Class</option>
+                <option value="">JSS 1A</option>
+                <option value="">JSS 1B</option>
+                <option value="">JSS 2A</option>
+                <option value="">JSS 2B</option>
+                <option value="">JSS 3A</option>
+                <option value="">JSS 3B</option>
+                <option value="">SSS 1A</option>
+                <option value="">SSS 1B</option>
+                <option value="">SSS 2A</option>
+                <option value="">SSS 2B</option>
+                <option value="">SSS 3A</option>
+                <option value="">SSS 3B</option>
+            </select>
+    </div><br>
+
+                
+    <div class="cat">
+        <p>AMOUNT TO BE PAYED</p>
+        <input type="number" placeholder="Enter amount" id="fee"><br>
+        <br><button onclick="apple()" style="width: 10%;height: 30px;border-radius: 200px;font-size: 15px;">Submit</button>
+        <P id="message"></P>
+    </div>           
+                <script src="pay.js"></script>
+            
+</body>
+</html>

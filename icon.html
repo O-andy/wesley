@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/ff6af1f170.js" crossorigin="anonymous"></script>
+    <title>Darkmode</title>
+    <style>
+      body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+   
+   
+
+    <button style="text-align: center;" class="far fa-moon" onclick="lightMode()"></button>
+     <div class=""></div>
+     <button style="text-align: center;" class="fas fa-moon" onclick="darkMode()"></button> 
+    
+     
+   <h1>HELLO WORLD</h1>
+
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+  </body>
+</html>
